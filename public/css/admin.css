@@ -1,0 +1,148 @@
+:root {
+    --color-1: #222831;
+    --color-2: #00adb5;
+    --color-3: #ffffff;
+    --color-4: #000;
+    --color-5: #0077b6;
+    --color-6: #005f87;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+    background-color: var(--color-1);
+}
+.navbar .judul-web {
+    color: var(--color-3);
+    font-weight: 700;
+    font-size: 1.7rem;
+    font-style: italic;
+}
+.navbar .judul-web span {
+    color: var(--color-2);
+}
+
+/* ========== Dropdown ========== */
+.dropdown {
+    margin-left: 0.5rem;
+}
+.dropdown-menu {
+    right: 0;
+    left: auto !important;
+    transform: translateX(-5px);
+}
+
+/* ========== Ikon Hapus ========== */
+.delete-icon {
+    color: #00bcd4;
+    cursor: pointer;
+}
+
+/* ========== Account Card ========== */
+.account-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.account-card img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* ========== Profile Pic ========== */
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Tab Button ========== */
+.tab-button {
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.tab-button:hover {
+    color: #00bcd4;
+}
+
+/* ========== Tab Content Area ========== */
+.tab-content-area {
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    display: none;
+}
+.tab-content-area.active {
+    display: flex !important;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========== Responsive (Pelamar/Universitas Card) ========== */
+@media (max-width: 768px) {
+    .account-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .judul-web {
+        font-size: 1.4rem;
+    }
+
+    .navbar .dropdown-menu {
+        left: auto !important;
+        right: 0;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background: transparent;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1); /* agar ikon toggle kelihatan di background gelap */
+    }
+
+    .navbar .collapse.show {
+        background-color: var(--color-1);
+        padding: 1rem;
+    }
+    .dropdown-menu {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: -200px !important;
+        transform: none !important;
+        width: 260px !important;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        z-index: 1050;
+    }
+
+    .dropdown-menu .notif-item {
+        font-size: 0.95rem;
+    }
+
+    .dropdown-header {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}

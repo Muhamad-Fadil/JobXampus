@@ -1,0 +1,479 @@
+:root {
+    --color-1: #222831;
+    --color-2: #00adb5;
+    --color-3: #ffffff;
+    --color-4: #000;
+    --color-5: #0077b6;
+    --color-6: #005f87;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.content-pelamar {
+    min-height: 100vh;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+/* ========== Navbar ========== */
+.navbar {
+    background-color: var(--color-1);
+}
+.navbar .judul-web {
+    color: var(--color-3);
+    font-weight: 700;
+    font-size: 1.7rem;
+    font-style: italic;
+}
+.navbar .judul-web span {
+    color: var(--color-2);
+}
+.navbar .navbar-nav .nav-link {
+    color: var(--color-3);
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--color-2);
+}
+
+/* ========== Header ========== */
+.header .judul-header {
+    font-weight: bold;
+    padding-top: 70px;
+}
+.deskripsi-header {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+}
+
+/* ========== Dropdown ========== */
+.dropdown {
+    margin-left: 0.5rem;
+}
+
+.dropdown-menu {
+    right: 0;
+    left: auto !important;
+    transform: translateX(-5px); /* Ubah sesuai kebutuhan */
+}
+
+.btn-dropdown {
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+
+/* ========== Icon ========== */
+.icon,
+.icon-pelamar {
+    color: var(--color-2);
+}
+.icon:hover {
+    color: black;
+}
+.icon-pelamar {
+    padding-left: 2rem;
+}
+
+/* ========== List Universitas ========== */
+.list-group h1 {
+    font-size: 25px;
+}
+.list-group-item {
+    cursor: pointer;
+}
+.list-group-item.active {
+    background-color: var(--color-2);
+    color: var(--color-3);
+}
+.list-group-item img {
+    border-radius: 4px;
+}
+
+/* ========== Lowongan Card ========== */
+.card-lowongan-coba {
+    border: 1px solid var(--color-4);
+    padding: 1rem;
+}
+.card-lowongan-coba:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.card-lowongan-coba h5 {
+    font-size: 1rem;
+}
+.card-lowongan-coba p.deskripsi {
+    font-size: 0.9rem;
+}
+
+/* ========== Sticky List ========== */
+#list-univ {
+    position: sticky;
+    top: 100px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--color-3);
+}
+
+/* ========== Login Layout ========== */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+.left-pane {
+    flex: 2;
+    background: url("../img/foto-login-pelamar-2.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+.left-pane-register {
+    flex: 2;
+    background: url("../img/register-pelamar.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+.right-pane {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--color-3);
+}
+.form-box {
+    width: 100%;
+    max-width: 400px;
+}
+.form-box h2 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.form-box h2 span {
+    font-style: italic;
+    color: var(--color-2);
+}
+.form-control {
+    border-radius: 10px;
+}
+.btn-primary {
+    background-color: var(--color-2);
+    border: none;
+    border-radius: 10px;
+}
+.btn-primary:hover {
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+.login-link {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.login-link a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.login-options {
+    margin-top: 2rem;
+    text-align: center;
+}
+.login-options a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ========== Job Listing (Home Pelamar) ========== */
+.judul-client,
+.judul-lowongan {
+    margin: 4rem 0;
+}
+.judul-client h2,
+.judul-lowongan h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+.carousel-item img {
+    max-height: 600px;
+    object-fit: cover;
+    height: 100%;
+    object-position: center;
+}
+.client {
+    background-color: var(--color-1);
+    padding: 2rem 0;
+}
+.client img {
+    max-height: 75px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.job-card {
+    border-radius: 15px;
+    padding: 20px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #000;
+    transition: 0.3s;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    background-color: var(--color-3);
+}
+.job-card-dark {
+    background-color: var(--color-1);
+    color: var(--color-3);
+    cursor: pointer;
+}
+.univ-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-color: var(--color-3);
+    padding: 5px;
+    align-self: center;
+}
+.univ-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 12px;
+    color: inherit;
+}
+.job-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.job-field {
+    font-size: 0.95rem;
+    text-align: center;
+    color: inherit;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+.learn-more {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: inherit;
+    font-weight: 500;
+    gap: 6px;
+    transition: color 0.2s;
+}
+.learn-more:hover {
+    color: var(--color-5);
+}
+
+/* ========== Footer ========== */
+footer {
+    background-color: var(--color-1);
+}
+
+/* ========== CRUD Card ========== */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+}
+.card h3 {
+    font-weight: 600;
+    font-style: italic;
+}
+.card label {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.container-side {
+    border-right: 1px solid #00adb5;
+    padding: 0 1.2rem;
+}
+.container-right {
+    border-left: 1px solid #00adb5;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cv {
+    border: 1px solid #0077b6;
+    color: #0077b6;
+}
+
+.btn-cv:hover {
+    background-color: #0077b6;
+    color: white;
+}
+
+.left-nav {
+    background: white;
+    border-radius: 10px;
+}
+.card-section {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.sidebar-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.sidebar-item.active {
+    background-color: #daf4f6;
+    font-weight: 600;
+}
+.sidebar-item .text-danger {
+    font-weight: bold;
+}
+.content-section {
+    display: none;
+}
+.content-section h5 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    border-left: 10px solid #00adb5;
+    padding-left: 1rem;
+    margin-bottom: 2.5rem;
+}
+.content-section.active {
+    display: block;
+}
+
+.tab-button {
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.tab-button:hover {
+    color: #00bcd4;
+}
+
+.account-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.account-card img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.delete-icon {
+    color: #00bcd4;
+    cursor: pointer;
+}
+
+.tab-content-area {
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    display: none;
+}
+
+.tab-content-area.active {
+    display: flex !important;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        padding: 0 1rem; /* tambahkan sedikit padding samping */
+    }
+
+    .right-pane {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .form-box h2 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .btn-primary {
+        padding: 0.6rem;
+        font-size: 1rem;
+    }
+
+    .login-options,
+    .login-link {
+        font-size: 0.95rem;
+    }
+
+    .list-group-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .list-group-item img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .judul-header {
+        font-size: 1.5rem;
+    }
+    .deskripsi-header {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+    #list-univ {
+        position: static;
+        max-height: none;
+        overflow-y: visible;
+        margin-bottom: 2rem;
+    }
+    .card-lowongan-coba h5 {
+        font-size: 1rem;
+    }
+    .card-lowongan-coba p.deskripsi {
+        font-size: 0.9rem;
+    }
+    .judul-client {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .carousel-item {
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,350 @@
+:root {
+    --color-1: #222831;
+    --color-2: #00adb5;
+    --color-3: #ffffff;
+    --color-4: #000;
+    --color-5: #0077b6;
+    --color-6: #005f87;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    background-color: var(--color-3);
+    color: var(--color-4);
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    background-color: var(--color-1);
+    color: white;
+}
+
+.sidebar h4 {
+    color: var(--color-3);
+    font-weight: 700;
+    font-size: 1.7rem;
+    font-style: italic;
+}
+
+.sidebar h4 span {
+    color: var(--color-2);
+}
+
+.sidebar .nav-link {
+    color: var(--color-3);
+    padding: 1rem;
+}
+
+.sidebar .nav-link:hover {
+    color: var(--color-2);
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    background: linear-gradient(to right, #f7f9fc, #eef2f7);
+}
+
+.header-univ {
+    color: #222831;
+    border-left: 5px solid var(--color-2);
+    padding-left: 12px;
+    margin-bottom: 30px;
+}
+
+/* LOGIN PAGE */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-pane {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--color-3);
+}
+
+.right-pane {
+    flex: 2;
+    background: url("../img/foto-login-univ.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+.right-pane-register {
+    flex: 2;
+    background: url("../img/register-univ.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+
+.form-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-box h2 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.form-box h2 span {
+    font-style: italic;
+    color: var(--color-2);
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: var(--color-2);
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+
+.login-link,
+.login-options {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.login-link a,
+.login-options a {
+    color: var(--color-5);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover,
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+/* CARD & JOB STYLE */
+.card,
+.overview-card,
+.job-card {
+    background-color: var(--color-3);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+.overview-card:hover,
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-title,
+.job-card h5 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.job-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.job-card .job-actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.job-card .bi {
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.job-card .bi:hover {
+    color: var(--color-2);
+}
+
+.job-card i.bi {
+    color: var(--color-6);
+}
+
+/* LIST GROUP */
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* MISC */
+.input-search {
+    max-width: 250px;
+    border-radius: 50px;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.user-section img {
+    border: 2px solid #dee2e6;
+    margin-left: 1rem;
+}
+
+.bi-bell {
+    cursor: pointer;
+    color: #6c757d;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+.job-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.job-subtitle {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.icon {
+    color: var(--color-5);
+    font-size: 1.2rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+a {
+    color: var(--color-5);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-6);
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2rem 0;
+}
+
+ul li {
+    margin-bottom: 0.75rem;
+}
+
+.toggle-sidebar {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1100;
+  background-color: transparent;
+  border: none;
+  color: #222;
+}
+
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Tersembunyi awalnya */
+  width: 250px;
+  height: 100%;
+  background-color: var(--color-1);
+  color: white;
+  z-index: 1050;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+}
+
+/* Saat sidebar aktif (terbuka) */
+.sidebar-wrapper.active {
+  left: 0;
+}
+
+/* Hentikan scroll halaman ketika sidebar dibuka */
+body.sidebar-open {
+  overflow: hidden;
+}
+
+.sidebar-wrapper h4 {
+  color: var(--color-3);
+  font-weight: 700;
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+.sidebar-wrapper h4 span {
+  color: var(--color-2);
+}
+
+.sidebar-wrapper .nav-link {
+  color: var(--color-3);
+  padding: 1rem;
+}
+
+.sidebar-wrapper .nav-link:hover {
+  color: var(--color-2);
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    display: none !important;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-top h2 {
+    margin-left: 3rem;
+  }
+
+  .user-section {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .input-search {
+    max-width: 100%;
+  }
+
+  .icon {
+  color: var(--color-5);
+  font-size: 1.2rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+}
+

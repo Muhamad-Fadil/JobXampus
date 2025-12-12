@@ -1,0 +1,29 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #222831 50%, #00adb5 50%);
+  min-height: 100vh;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+.card h3 {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.card label {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.btn {
+    background-color: rgb(57, 62, 70); 
+    color: white; 
+    width: 100%;
+}
